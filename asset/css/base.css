@@ -11,6 +11,9 @@ html{
     line-height: 1.6rem;
     box-sizing: border-box;
 }
+html,body{
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
 }

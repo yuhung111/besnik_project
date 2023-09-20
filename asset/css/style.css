@@ -1,14 +1,19 @@
 /* =========Header========== */
-
-.header{
+.fixed__header{
     background-color: #e6f0ff;
-    height: 706px;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+.header{
+
 }
 .navbar{
     display: flex;
     align-items: center;
     width: 100%;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 .navbar__navigation{
     display: flex;
@@ -38,10 +43,12 @@
 }
 /* Hero */
 .hero{
+    background-color: #e6f0ff;
+    height: 628px;
     width: 100%;
 }
 .hero__info{
-    margin-top: 100px;
+    margin-top: 140px;
 }
 .hero__info-sub-title{
     font-size: 1.8rem;
@@ -51,7 +58,7 @@
     color: #687690;
 }
 .hero__info-title{
-    font-size: 6.4rem;
+    font-size: 6.2rem;
     font-weight: 700;
     line-height: 1.19;
     color: #000336;

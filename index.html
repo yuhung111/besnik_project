@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Besnik_project</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="asset/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="asset/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="asset/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- link css -->
     <link rel="stylesheet" href="./asset/css/reset.css">
     <link rel="stylesheet" href="./asset/fonts/stylesheet.css">
     <link rel="stylesheet" href="./asset/css/style.css">
@@ -11,20 +20,19 @@
     <link rel="stylesheet" href="./asset/css/grid.css">
 </head>
 <body>
-    <main>
-        <header class="header">
+        <header class="fixed__header">
             <div class="grid sm-wide">
                 <div class="row no-gutters">
                     <nav class="navbar">
                         <!-- logo -->
-                        <img class="navbar__logo" src="./asset/img/logo.svg" alt="Logo Besnik">
+                        <a href="#"><img class="navbar__logo" src="./asset/img/logo.svg" alt="Logo Besnik"></a>
                         <!-- navigation -->
                         <ul class="navbar__navigation">
-                            <li class="navbar__navigation-item"><a href="#!" class="navbar__navigation-item-link">Home</a></li>
-                            <li class="navbar__navigation-item"><a href="#!" class="navbar__navigation-item-link">Services</a></li>
-                            <li class="navbar__navigation-item"><a href="#!" class="navbar__navigation-item-link">Features</a></li>
-                            <li class="navbar__navigation-item"><a href="#!" class="navbar__navigation-item-link">Resourses</a></li>
-                            <li class="navbar__navigation-item"><a href="#!" class="navbar__navigation-item-link">Contact</a></li>
+                            <li class="navbar__navigation-item"><a href="#" class="navbar__navigation-item-link">Home</a></li>
+                            <li class="navbar__navigation-item"><a href="#services" class="navbar__navigation-item-link">Services</a></li>
+                            <li class="navbar__navigation-item"><a href="#features" class="navbar__navigation-item-link">Features</a></li>
+                            <li class="navbar__navigation-item"><a href="#resourses" class="navbar__navigation-item-link">Resourses</a></li>
+                            <li class="navbar__navigation-item"><a href="#contact" class="navbar__navigation-item-link">Contact</a></li>
                         </ul>
                         <!-- Action -->
                         <div class="navbar__actions">
@@ -32,24 +40,29 @@
                             <a class="btn action__btn" href="">Sign up</a>
                         </div>
                     </nav>
-                    <div class="hero">
-                        <div class="row no-gutters">
-                             <div class="col l-6">
-                                 <div class="hero__info">
-                                     <div class="hero__info-sub-title">Welcome to Besnik Agency</div>
-                                     <h1 class="hero__info-title">Discover a place<br>you'll love to live.</h1>
-                                     <p class="hero__info-desc">Get the best real estate deals first, before they hit the mass<br>market! HOT FORECLOSURE DEALS with one simple search</p>
-                                     <a href="#!" class="btn hero__info-btn">More About Us</a>
-                                 </div>
-                             </div>
-                             <div class="col l-6"><img class="hero__img" src="asset/img/hero-img.svg" alt="Discover a place you'll love to live."></div>
-                        </div>
-                     </div>
                 </div>
             </div>
         </header>
+    <main>
+        <div class="hero">
+            <div class="grid sm-wide">
+                <div class="row no-gutters">
+                    <div class="row no-gutters">
+                            <div class="col l-6">
+                                <div class="hero__info">
+                                    <div class="hero__info-sub-title">Welcome to Besnik Agency</div>
+                                    <h1 class="hero__info-title">Discover a place<br>you'll love to live.</h1>
+                                    <p class="hero__info-desc">Get the best real estate deals first, before they hit the mass<br>market! HOT FORECLOSURE DEALS with one simple search</p>
+                                    <a href="#!" class="btn hero__info-btn">More About Us</a>
+                                </div>
+                            </div>
+                            <div class="col l-6"><img class="hero__img" src="asset/img/hero-img.svg" alt="Discover a place you'll love to live."></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
-            <div class="container__clients">
+            <div id="services" class="container__clients">
                 <div class="grid sm-wide">
                     <div class="clients__content">
                         <div class="row no-gutters">
@@ -108,7 +121,7 @@
                     </div>  
                 </div>
             </div>
-            <div class="container__featured">
+            <div id="features" class="container__featured">
                 <div class="featured__content">
                     <div class="grid sm-wide">
                         <div class="row no-gutters">
@@ -191,7 +204,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container__statistics">
+            <div id="resourses" class="container__statistics">
                 <div class="grid sm-wide">
                     <div class="row no-gutters">
                         <div class="stats-wrap col l-6">
@@ -258,7 +271,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container__sub">
+            <div id="contact" class="container__sub">
                 <div class="grid sm-wide">
                     <div class="row no-gutters">
                         <div class="sub__content">
@@ -271,6 +284,7 @@
                 </div>
             </div>
         </div>
+    </main>
         <div class="footer">
             <div class="grid sm-wide">
                 <div class="footer__row row no-gutters">
@@ -319,6 +333,5 @@
                 </div>
             </div>
         </div>
-    </main>
 </body>
 </html>
