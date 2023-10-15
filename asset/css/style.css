@@ -4,7 +4,7 @@
     padding-top: 26px;
     position: sticky;
     top: -26px;
-    z-index: 1;
+    z-index: 2;
 }
 .header{
 
@@ -20,6 +20,7 @@
     margin-left: 50px;
 }
 .navbar__navigation-item-link{
+    display: block;
     font-weight: 500;
     font-size: 1.4rem;
     color: #4f5361;
@@ -46,9 +47,6 @@
     background-color: #e6f0ff;
     height: 628px;
     width: 100%;
-}
-.hero__info{
-    margin-top: 140px;
 }
 .hero__info-sub-title{
     font-size: 1.8rem;
@@ -79,17 +77,18 @@
     width: calc(100% + 36px);
 }
 /* =========Clients========== */
-.container__clients{
-    width: 100%;
-    margin-top: 61px;
-    padding-top: 61px;
-    padding-bottom: 50px;
+
+.clients{
+    margin-top: 79px;
+    padding: 43px 0 64px;
 }
 .clients__content{
     width: 100%;
 }
-.clients__stars{
-    margin-left: auto;
+.clients__star-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .clients__desc{
     font-size: 1.6rem;
@@ -122,10 +121,9 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 /* =========Guides========== */
-.container__guides{
+.guides{
     margin-top: 50px;
     padding-top: 50px;
-    width: 100%;
     padding-bottom: 120px;
 }
 .guides__content{
@@ -196,12 +194,9 @@
     display: block;
 }
 /* =========Featured========== */
-.container__featured{
-    width: 100%;
+
+.featured{
     background-color: #f5fafe;
-}
-.featured__content{
-    width: 100%;
     padding-top: 110px;
     padding-bottom: 110px;
 }
@@ -235,16 +230,16 @@
     color: #0689ff;
 }
 .featured__list-item{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 70px;
+    gap: 30px;
 }
 .featured__item{
-    width: 350px;
     background-color: var(--white-color);
     border-radius: 12px;
     overflow: hidden;
+    width: 350px;
 }
 .featured__img{
     width: 100%;
@@ -288,8 +283,7 @@
     font-weight: 500;
 }
 /* ========= Stats ========== */
-.container__statistics{
-    display: block;
+.statistics{
     padding-top: 125px;
     padding-bottom: 50px;
 }
@@ -367,7 +361,8 @@
     color: #000339;
     font-size: 3.6rem;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.29;
+    width: 273px;
 }
 .stats__info-desc{
     color: #5a6473;
@@ -375,6 +370,7 @@
     font-size: 1.6rem;
     line-height: 1.88;
     margin-top: 20px;
+    width: 308px;
 }
 .stats__row-qty{
     margin-top: 97px;
@@ -399,7 +395,7 @@
 }
 /* ========= Subcription ========== */
 
-.container__sub{
+.sub{
     padding-top: 90px;
     padding-bottom: 55px;
 }
@@ -459,7 +455,6 @@
     font-weight: 400;
     font-size: 1.6rem;
     color: #7a7a7e;
-    white-space: nowrap;
 }
 .footer__social-list{
     display: flex;
